@@ -2,6 +2,7 @@
     --blue-color:#212885;
     --green-color:#33d1cc;
 }
+/* Index.html */
 .barTop{
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,8 @@
     font-weight: bold;
     color:#0d6efd ;
 }
+/* Index.html */
+    /*NavBar*/
 .navbar .navbar-nav .nav-item .nav-link{
     color:var(--blue-color);
     font-size: 1.1rem;
@@ -62,50 +65,49 @@
     background: linear-gradient(to right, #0077b3, #000d33);
     transform: scale(1.05); 
 }
-img{
-    width: 100%;
-    height: 686px;
-}
+
 .navbar{
     background-color:#d4d4d4;
 }
-#work{
-    height:78px ;
-    width: 78px;
-}
-.job .iconJob{
-    height: 200px;
-}
+/* service.html */
 .row .iconJob .icon{
     color: var(--green-color);
     font-size: 12rem;
     margin-top: 15px;
 }
-.card-img-top {
-    width: 100%;
-    height: auto;
-}
-.description{
-    max-width: 500px;
-}
+/* about.html */
 .image>img{
     height: 350px;
+    width: 100%;
     border-radius: 90px;
+}
+/* contact */
+.Contact{
+    margin-top: 50px;
 }
 .Contact h3{
     text-align: center;
-    margin-top: 150px;
 }
+.form{
+    width: 250px;
+    float: right;
+    margin-top: 15px;
+    transform: translateX(-255%);
+}
+#infoUser{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:1.4rem;
+}
+/* social */
 .social{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    list-style: none;
-    margin-top: 50px;
+    gap: 70px;
 }
 .social .social_list{
+    list-style: none;
     font-size: 2rem;
     transition: color 0.3s ease;
+    
 }
 .social_list:hover{
     transform: scale(1.5);
