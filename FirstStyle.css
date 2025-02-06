@@ -124,3 +124,8 @@
 .what{
     color: rgb(21, 49, 21);
 }
+/* footer */
+footer{
+    color: white;
+    background-color: var(--blue-color);
+}
