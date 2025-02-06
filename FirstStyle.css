@@ -54,10 +54,7 @@
     text-transform: uppercase;
     color: #001a66;
 }
-.imageBar{
-    width: 150px;
-    height: auto;
-}
+
 .gradient-btn {
     background: linear-gradient(to right, #0088cc, #001a66); 
     color: white; 
