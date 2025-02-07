@@ -39,6 +39,22 @@
 .navbar .navbar-toggler[aria-expanded="true"]{
     border-color: var(--blue-color);
 }
+#theme {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--blue-color);
+    border-radius: 50px;
+    background-color: white;
+    color: var(--blue-color);
+    cursor: pointer;
+    outline: none;
+    margin:0 10px;
+}
+#theme:hover {
+    background-color: var(--blue-color);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 /*navbar*/
 /* text and image */
 .text{
@@ -97,14 +113,11 @@
     width: 250px;
     margin-top: 15px;
 }
-#infoUser{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size:1.4rem;
-}
+
 /* social */
 .social{
     gap: 70px;
+    cursor: pointer;
 }
 .social .social_list{
     list-style: none;
