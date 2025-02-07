@@ -15,7 +15,6 @@
 </head>
 
 <body>
-    <!-- Section: Design Block -->
     <section class="">
         <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
             <div class="container">
@@ -36,55 +35,30 @@
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <div class="card">
                             <div class="card-body py-5 px-md-5">
-                                <form>
+                                <form id="singUPform">
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
-                                            <div data-mdb-input-init class="form">
+                                            <div class="form">
                                                 <label class="form-label" for="form3Example1">First name</label>
-                                                <input type="text" id="form3Example1" class="form-control" />
+                                                <input type="text" id="fName" class="form-control" required />
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
-                                            <div data-mdb-input-init class="form">
+                                            <div class="form">
                                                 <label class="form-label" for="form3Example2">Last name</label>
-                                                <input type="text" id="form3Example2" class="form-control" />
+                                                <input type="text" id="lName" class="form-control" required />
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Email input -->
-                                    <div data-mdb-input-init class="form mb-4">
+                                    <div class="form mb-4">
                                         <label class="form-label" for="form3Example3">Email address</label>
-                                        <input type="email" id="form3Example3" class="form-control" />
+                                        <input type="email" id="emailSingUP" class="form-control" required />
                                     </div>
-                                    <!-- Password input -->
-                                    <div data-mdb-input-init class="form mb-4">
+                                    <div class="form mb-4">
                                         <label class="form-label" for="form3Example4">Password</label>
-                                        <input type="password" id="form3Example4" class="form-control" />
+                                        <input type="password" id="pass" class="form-control" required />
                                     </div>
-                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-block mb-4">
-                                        Sign up
-                                    </button>
-                                    <!-- Register buttons -->
-                                    <div class="text-center">
-                                        <p>or sign up with:</p>
-                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                            class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </button>
-                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                            class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-google"></i>
-                                        </button>
-                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                            class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-twitter"></i>
-                                        </button>
-                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                            class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
                                 </form>
                             </div>
                         </div>
@@ -92,8 +66,8 @@
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script2.js"></script>
 </body>
 
 </html>

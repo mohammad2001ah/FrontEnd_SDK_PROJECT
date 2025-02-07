@@ -19,7 +19,7 @@ theme.addEventListener("change",function(event){
     }
 })
 // end change theme page and color text
-// start store email user and phone number in localstorage
+// start store email user and phone number (and login form) in localstorage
 var form =document.getElementsByClassName("form")[0];
 var email=document.getElementById("email");
 var phoneNumber=document.getElementById("phoneNumber");
@@ -36,7 +36,7 @@ form.addEventListener("submit",function(event){
         email:email.value,
         phoneNumber:phoneNumber.value,
     }
-    alert("succecfull")
+    alert("we will contact you in 24h,Thanks")
     userList.push(user);
     localStorage.setItem("user",JSON.stringify(userList));
     email.value="";
