@@ -44,30 +44,30 @@ form.addEventListener("submit",function(event){
 })
 //end store email user and phone number in localstorage
 //start turn(on ,off) language
-var changeLang=document.getElementById("changeLang");
-var labellang=document.getElementById("labellang");
-var lang=localStorage.getItem("lang");
-if(lang == "arabic"){
-    document.dir="rtl";
-    labellang.innerText="AR"
-    changeLang.checked = false;
-}
-else{
-    document.dir="ltr";
-    labellang.innerText="EN"
-    changeLang.checked = true;
-}
+// var changeLang=document.getElementById("changeLang");
+// var labellang=document.getElementById("labellang");
+// var lang=localStorage.getItem("lang");
+// if(lang == "arabic"){
+//     document.dir="rtl";
+//     labellang.innerText="AR"
+//     changeLang.checked = false;
+// }
+// else{
+//     document.dir="ltr";
+//     labellang.innerText="EN"
+//     changeLang.checked = true;
+// }
 
-changeLang.addEventListener("click",function(){
-    if(changeLang.checked==false){
-        document.dir="rtl";
-        labellang.innerText="AR"
-        localStorage.setItem("lang","arabic")
-    }
-    else{
-        document.dir="ltr";
-        labellang.innerText="EN"
-        localStorage.setItem("lang","english")
-    }
-})
+// changeLang.addEventListener("click",function(){
+//     if(changeLang.checked==false){
+//         document.dir="rtl";
+//         labellang.innerText="AR"
+//         localStorage.setItem("lang","arabic")
+//     }
+//     else{
+//         document.dir="ltr";
+//         labellang.innerText="EN"
+//         localStorage.setItem("lang","english")
+//     }
+// })
 // end turn(on ,off) language
