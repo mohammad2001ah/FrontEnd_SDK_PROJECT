@@ -44,7 +44,7 @@ loginForm.addEventListener("submit", function(event) {
     }
     emailLogin.value = "";
     passLogin.value = "";
-    window.location.href="index.html";
+    window.location.href="admin.html";
 });
 }
 
