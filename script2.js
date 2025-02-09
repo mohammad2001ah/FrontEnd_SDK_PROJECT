@@ -46,3 +46,4 @@ loginForm.addEventListener("submit", function(event) {
     emailLogin.value = "";
     passLogin.value = "";
 });
+
