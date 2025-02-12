@@ -39,7 +39,6 @@ loginForm.addEventListener("submit", function(event) {
     if (isValidUser) {
         alert("Successful login");
         window.location.href="admin.html";
-        // window.location.href = "index.html";
     } else {
         alert("Invalid email or password.");
     }
