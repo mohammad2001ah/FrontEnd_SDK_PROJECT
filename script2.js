@@ -38,13 +38,13 @@ loginForm.addEventListener("submit", function(event) {
     }
     if (isValidUser) {
         alert("Successful login");
-        window.location.href = "index.html";
+        window.location.href="admin.html";
+        // window.location.href = "index.html";
     } else {
         alert("Invalid email or password.");
     }
     emailLogin.value = "";
     passLogin.value = "";
-    window.location.href="admin.html";
 });
 }
 
