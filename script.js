@@ -1,6 +1,7 @@
 // start change theme page and color text 
 var theme=document.getElementById("theme");
 var cssfile=document.getElementById("cssfile");
+var navbar=document.getElementsByClassName("navbar");
 cssfile.href=localStorage.getItem("file");
 document.body.style.backgroundColor=localStorage.getItem("theme");
 theme.addEventListener("change",function(event){
@@ -24,7 +25,7 @@ var form =document.getElementsByClassName("form")[0];
 var email=document.getElementById("email");
 var phoneNumber=document.getElementById("phoneNumber");
 var userList=[];
-if(localStorage.getItem("user")!=null){
+if(localStorage.getItem("user")!= null){
     var userList=JSON.parse(localStorage.getItem("user"))
 }
 else{
@@ -36,38 +37,14 @@ form.addEventListener("submit",function(event){
         email:email.value,
         phoneNumber:phoneNumber.value,
     }
+    if(email.value==="" || phoneNumber.value===""){
+        alert("Please fill in all fields before submitting.");
+    }
+    if(email.value != "" && phoneNumber.value !=""){
     alert("we will contact you in 24h,Thanks")
-    userList.push(user);
-    localStorage.setItem("user",JSON.stringify(userList));
     email.value="";
     phoneNumber.value="";
+    }
+    userList.push(user);
+    localStorage.setItem("user",JSON.stringify(userList));
 })
-//end store email user and phone number in localstorage
-//start turn(on ,off) language
-// var changeLang=document.getElementById("changeLang");
-// var labellang=document.getElementById("labellang");
-// var lang=localStorage.getItem("lang");
-// if(lang == "arabic"){
-//     document.dir="rtl";
-//     labellang.innerText="AR"
-//     changeLang.checked = false;
-// }
-// else{
-//     document.dir="ltr";
-//     labellang.innerText="EN"
-//     changeLang.checked = true;
-// }
-
-// changeLang.addEventListener("click",function(){
-//     if(changeLang.checked==false){
-//         document.dir="rtl";
-//         labellang.innerText="AR"
-//         localStorage.setItem("lang","arabic")
-//     }
-//     else{
-//         document.dir="ltr";
-//         labellang.innerText="EN"
-//         localStorage.setItem("lang","english")
-//     }
-// })
-// end turn(on ,off) language

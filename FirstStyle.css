@@ -3,26 +3,6 @@
     --green-color:#33d1cc;
 }
 
-/* berfo navbar */
-.barTop{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px 0;
-    font-size: 1.3rem;
-}
-.barTop>a{
-    text-decoration: none;
-}
-.sing>a{
-    text-decoration: none;
-    padding: 0 5px;
-}
-.slash{
-    display: inline-block;
-    font-weight: bold;
-    color:#0d6efd ;
-}
 /* befor navbar */
 /*NavBar*/
 .navbar .navbar-nav .nav-item .nav-link{
@@ -38,6 +18,10 @@
 }
 .navbar .navbar-toggler[aria-expanded="true"]{
     border-color: var(--blue-color);
+}
+.sing>a{
+	text-decoration: none;
+	padding: 0 5px;
 }
 #theme {
     padding: 8px 15px;
@@ -70,7 +54,6 @@
     text-transform: uppercase;
     color: #001a66;
 }
-
 .gradient-btn {
     background: linear-gradient(to right, #0088cc, #001a66); 
     color: white; 
@@ -91,15 +74,31 @@
 /* text and image */
 /* service section */
 .row .iconJob .icon{
-    color: var(--green-color);
+    color: var(--blue-color);
     font-size: 12rem;
     margin-top: 15px;
 }
 /* about section*/
-.image>img{
-    height: 350px;
+.aboutText{
+    background-image: url('code.jpg'); 
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.aboutText>h2{
+    background-color: rgba(0, 0, 0, 0.5); /* طبقة شفافة فوق الصورة */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
     width: 100%;
-    border-radius: 90px;
 }
 /* contact */
 .Contact{
